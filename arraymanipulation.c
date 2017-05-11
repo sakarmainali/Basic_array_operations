@@ -2,7 +2,7 @@
 #include <stdlib.h>
 int SIZE1,SIZE2;
 int *a;
-int * b;
+int *b;
 void populate()
 {
     int i;
@@ -16,7 +16,6 @@ void populate()
     }
     printf("Elements stored success\n");
 }
-
 void display()
 {
     if(a!=NULL)
@@ -75,9 +74,7 @@ SIZE1=SIZE1-1;
 }
     }
     else printf("Deletion action failed( no action to handel empty array)::\n");
-
 }
-
 void merge()
 {
     if(a!=NULL){
@@ -96,7 +93,6 @@ void merge()
     for(i=0;i<SIZE1;i++)
 {
      if(i==temp){
-
             for(j=0;j<SIZE2;j++)
            {
             a[i]=b[j];
@@ -115,8 +111,6 @@ void update()
 {
     printf("Enter the position(1 to %d) to update element\n",SIZE1);scanf("%d",&p);
     printf("Enter the new element to update on position(%d) ",p);scanf("%d",&n);
-
-
     for(i=0;i<SIZE1;i++)
     {
         if(i==p-1)
@@ -124,15 +118,11 @@ void update()
             a[i]=n;
         }
     }
-
 }
 else printf("array not created create array first press 1 to create\n");
 }
-
-
 int main()
 {
-
    int x;
     p:
    printf("-----------------MENU------------------------\n");
@@ -156,7 +146,6 @@ int main()
        populate();
        display();
        break;
-
    }
    case(2):
    {
@@ -194,14 +183,9 @@ int main()
    default:
     {
         printf("invalid input (Enter number from(1 to 5)\n");
-
         break;
-
     }
-
 }
-
-
 }
     return 0;
 }
