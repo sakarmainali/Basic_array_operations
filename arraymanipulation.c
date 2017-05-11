@@ -30,7 +30,6 @@ printf("\n");
     }
     else printf("EMPTY ARRAY !! press menu no: 1 to create array first\n");
 }
-
 void insert()
 {
     int i,p,n;
@@ -57,20 +56,15 @@ printf("Enter position(1 to %d) to delete\n",SIZE1);scanf("%d",&p);
     }
 else
 {
-
 for(i=0;i<SIZE1;i++)
 {
-
     if(i>=p-1)
     {
         a[i]=a[i+1];
     }
-
-
 }
 if(p>SIZE1){}else{printf("....element position(%d) deleted from array success \n ",p);}
 SIZE1=SIZE1-1;
-
 }
     }
     else printf("Deletion action failed( no action to handel empty array)::\n");
@@ -102,7 +96,6 @@ void merge()
 }
     } else printf("merge failed \"no previous array to merge\"\n");
 }
-
 void update()
 {
 
@@ -132,13 +125,10 @@ int main()
    printf("\tpress 4 to display  elements of array\n");
    printf("\tpress 5 to merge two arrays\n");
    printf("\tpress 6 to update a element on array\n");
-
     while(1)
 {
     printf("ENTER MENU NO:\n(press 0 to get menu if we dont see it): ");
    scanf("%d",&x);
-
-
    switch(x)
 {
    case(1):
@@ -152,7 +142,6 @@ int main()
          insert();
          display();
          break;
-
    }
    case(3):
    {
