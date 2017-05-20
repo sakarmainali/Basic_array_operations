@@ -193,7 +193,7 @@ int main()
    default:
     {
         printf("invalid input (Enter number from(1 to 7)\n");
-        goto p;
+        goto v;
       
     }
 }
