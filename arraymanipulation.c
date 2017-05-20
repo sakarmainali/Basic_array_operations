@@ -132,10 +132,12 @@ int main()
    printf("\tpress 4 to display  elements of array\n");
    printf("\tpress 5 to merge two arrays\n");
    printf("\tpress 6 to update a element on array\n");
+   printf("\tpress 7 to exit a element on array\n");
 
-    while(1)
-{
-    printf("ENTER MENU NO:\n(press 0 to get menu if not seen on screen): ");
+
+   v:
+
+    printf("ENTER MENU NO:\n(press 0 to get menu if you dont see it): ");
    scanf("%d",&x);
 
 
@@ -145,12 +147,14 @@ int main()
    {
        populate();
        display();
+       goto v;
        break;
    }
    case(2):
    {
          insert();
          display();
+         goto v;
          break;
 
    }
@@ -158,34 +162,41 @@ int main()
    {
         del();
         display();
+        goto v;
    }
    case(4):
     {
-       display();
+       display();goto v;
        break;
     }
    case(5):
     {
        merge();
-       display();
+       display(); goto v;
        break;
     }
    case(6):
     {
         update();
-        display();
+        display(); goto v;
         break;
+    }
+   case (7):
+    {
+       break;
     }
    case (0):
     {
-        goto p; break;
+        goto p;
+        break;
     }
    default:
     {
-        printf("invalid input (Enter number from(1 to 5)\n");
+        printf("invalid input (Enter number from(1 to 7)\n");
+        goto p;
         break;
     }
 }
-}
+
     return 0;
 }
