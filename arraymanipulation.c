@@ -148,38 +148,38 @@ int main()
        populate();
        display();
        goto v;
-       break;
+     
    }
    case(2):
    {
          insert();
          display();
          goto v;
-         break;
+      
 
    }
    case(3):
    {
         del();
         display();
-        goto v;
+        goto v; 
    }
    case(4):
     {
        display();goto v;
-       break;
+   
     }
    case(5):
     {
        merge();
        display(); goto v;
-       break;
+  
     }
    case(6):
     {
         update();
         display(); goto v;
-        break;
+   
     }
    case (7):
     {
@@ -188,13 +188,13 @@ int main()
    case (0):
     {
         goto p;
-        break;
+       
     }
    default:
     {
         printf("invalid input (Enter number from(1 to 7)\n");
         goto p;
-        break;
+      
     }
 }
 
