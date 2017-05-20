@@ -135,7 +135,7 @@ int main()
 
     while(1)
 {
-    printf("ENTER MENU NO:\n(press 0 to get menu if we dont see it): ");
+    printf("ENTER MENU NO:\n(press 0 to get menu if not seen on screen): ");
    scanf("%d",&x);
 
 
