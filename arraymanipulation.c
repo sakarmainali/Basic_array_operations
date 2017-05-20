@@ -132,7 +132,7 @@ int main()
    printf("\tpress 4 to display  elements of array\n");
    printf("\tpress 5 to merge two arrays\n");
    printf("\tpress 6 to update a element on array\n");
-   printf("\tpress 7 to exit a element on array\n");
+   printf("\tpress 7 to exit program\n");
 
 
    v:
